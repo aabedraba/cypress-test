@@ -1,5 +1,6 @@
 describe('My First Test', () => {
   it('Gets, types and asserts', () => {
+    console.log(Cypress.env('API_SERVER'))
     cy.visit(Cypress.env('API_SERVER'))
 
     cy.contains('type').click()
